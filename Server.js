@@ -26,7 +26,6 @@ app.use('/api/auth',authRoute)
 // routes
 app.use('/api/notes',noteRoutes)
 
-
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 10000 , () => {
     console.log("Server is running")
 })
